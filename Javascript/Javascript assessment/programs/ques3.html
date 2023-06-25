@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr =[10,20,30,40,50,60]
+        let a = []
+        let b= []
+
+        let sum = 0
+        for(let i=0;i<arr.length;i++)
+        {
+            i%2!=0?a.push(arr[i]/10):b.push(arr[i]/10)
+        }
+    document.write( "The value of A is = " + a)
+    document.write("<br>")
+        document.write("The value of B is = "+b);
+
+        document.write("<br>")
+        let c =[]
+
+        if(a.length>= b.length){
+             c = a.map(function(num,i,array){
+                return num + (b[i]||0)
+             });
+             
+        }else{
+            c = b.mp(function(num,i,array){
+                return num + (a[i] || 0);
+            })
+
+        }
+        
+        let d = c.toString();
+        document.write(" The sum of two array is = " +d)
+      
+
+        
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" value=""  placeholder="A" class="box">
+        <input type="text" value=""  placeholder="B" class="box">
+        <input type="text" value=""  placeholder="C" class="box">
+        <input type="button" value="+" onclick="add()" />
+
+    </div>
+    <div class="box1">
+
+    </div>
+    <!--Boxes-->
+    
+    <script>
+        function add() {
+
+            
+       
+         var box  = `
+         <input type="text" value="" name="A" placeholder="A" class="box1">
+        <input type="text" value="" name="A" placeholder="B" class="box1">
+        <input type="text" value="" name="A" placeholder="C" class="box1">
+        <input type="button" value="+" onclick="add2()" />
+        
+        <input type="button" value="-" onclick="remove()">`
+        document.querySelector('.box1').innerHTML += box;
+
+
+
+        }
+        function remove () {
+            document.getElementsByClassName(".box1").innerHTML =" ";
+            
+        }
+
+        
+function add2 (){
+    var box2  = `
+     <br>
+         <input type="text" value="" name="A" placeholder="A" class="box3">
+        <input type="text" value="" name="A" placeholder="B" class="box3">
+        <input type="text" value="" name="A" placeholder="C" class="box3">
+        <input type="button" value="+" onclick="add3()" />
+        // <input type="button" value="-" onclick="remove1()">`
+        document.querySelector('.box1').innerHTML += box2;
+
+
+}
+//         function remove1 () {
+//             document.querySelector(".box3").innerHTML =" ";
+            
+//         }
+// }
+
+//         // function remove() {
+//         //     document.getElementById("fo").innerHTML ="";
+            
+
+//         // }
+    </script>
+</body>
+
+</html>

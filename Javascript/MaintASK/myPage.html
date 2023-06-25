@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- Navbar start -->
+
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: #e3f2fd"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png"
+            alt=""
+            width="30"
+            height="20"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <button class="btn btn-primary" onclick="log()">logout</button>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar endS -->
+
+    <header>
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://wallpapers.com/images/featured/hd-nature-ngdfb9h966h4z3le.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://wallpapers.com/images/featured/high-resolution-gfinds1akzwf6vcq.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- cards starts here -->
+
+    <div class="container mt-5 px-4">
+      <div class="card-group">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This card has even longer content
+              than the first to show that equal height action.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- expanded footer -->
+
+    <div class="container-fluid bg-dark text-white text-center my-1">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 px-4">
+          <h3>Company</h3>
+          <p>About Us</p>
+          <p>Why Us</p>
+          <p>Team</p>
+          <p>Press</p>
+          <p>Become a Partner</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 px-4">
+          <h3>Services</h3>
+          <p>About Us</p>
+          <p>Why Us</p>
+          <p>Team</p>
+          <p>Press</p>
+          <p>Become a Partner</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 px-4">
+          <h3>Customers</h3>
+          <p>Brands</p>
+          <p>Testimonials</p>
+          <p>customer Stories</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 px-4">
+          <h3>Contact Us</h3>
+
+          <p>Book a Demo</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- expanded footer -->
+
+    <!-- footer -->
+
+    <div class="container-fluid bg-dark text-white text-center">
+      <div class="row">
+        <div class="div col-12">
+          <p>© 2023, UBITECH SOLUTIONS PVT LTD. ALL RIGHTS RESERVED</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <script>
+      function log() {
+        window.open("http://127.0.0.1:5501/MaintASK/index.html", "_blank");
+      }
+    </script>
+  </body>
+</html>

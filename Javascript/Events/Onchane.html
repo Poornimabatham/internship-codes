@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- <div class="main-div">
+        <div class="sub-div">
+            <label for=" ">Your Name: </label>
+            <input type="text" name="" id="ice">
+            <br>
+            <label for="">Choose an ice Flavour</label>
+            <select name="" id="iceCreams" onchange="selectElement()">
+            <option value="">Select One_</option>
+            <option value="chocklate">chocklate</option>
+            <option value="Sardine">Sardine</option>
+            <option value="Vanilla">Vanilla</option>
+            </select>
+        </div>
+    </div>
+    <div class="result">
+
+    </div> -->
+
+    <div class="">
+        <button onclick="callingFunction()" id="thirdWay">by calling a function</button>
+    </div> 
+
+    <script>
+//   let selectElement = () => {
+// // refernce
+// let result = document.querySelector(".result")
+//          let Ice = document.querySelector("#ice").value;
+//          console.log(Ice)
+//         let IceCreams  = document.querySelector("#iceCreams").value; 
+//            result.innerHTML = `${Ice} likes  ${IceCreams} icecream`
+//   }
+
+
+// 2 method
+//  let callingFunction =  () => {
+
+//     alert("calling a function")
+//  }
+
+
+// 3 method
+// id he to refernce lena padega
+//  let  thirdWay = document.querySelector('#thirdWay');
+//  thirdWay.onclick = function (){
+//     alert("third way of writing a function")
+//  }
+
+// 4 method
+let thirdWay = document.querySelector("#thirdWay");
+thirdWay.addEventListener('click',() => {
+    alert('fourth way of calling a function')
+})
+    </script>
+</body>
+</html>

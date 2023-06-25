@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100%;
+}
+
+#box {
+  width:150px;
+  height:100px;
+  background:black;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+#box1 {
+  width:150px;
+  height:100px;
+  background:red;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+
+button {
+  margin: 5px;
+  padding: 5px 8px;
+  outline: none;
+  background: #32bacf;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #ffa000;
+  cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+
+    <script>
+
+const box = document.createElement("div");
+box.id = "box";
+// console.log(box)
+document.body.appendChild(box);
+
+const button = document.createElement("button");
+button.id = "btn";
+// console.log(button)
+button.innerText = "click me"
+box.appendChild(button)
+ document.getElementById("btn").addEventListener("click",function(){
+    const div2 = document.createElement("div")
+    div2.id = "box1"
+    document.body.appendChild(div2)
+ });
+//    console.log(target)
+
+
+    </script>
+    
+</body>
+</html>

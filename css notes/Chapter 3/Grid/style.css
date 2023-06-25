@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: aqua;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    /* gap: 10px;
+    place-items: center; */
+    grid-template-areas: "nav nav nav"
+    "sidebar content content"
+    "sidebar content content";
+}
+
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(215, 160, 7);
+}
+.navbar{
+    grid-area: nav;
+
+}
+.sidebar{
+    grid-area: sidebar;
+
+}
+.footer{
+    grid-area: footr;
+
+}
+.content{
+
+    grid-area: content;
+}

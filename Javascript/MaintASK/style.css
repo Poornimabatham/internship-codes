@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container .tag{
+    text-align: center;
+}
+.container  button a{
+    text-decoration:  none;
+     color:  white;
+     text-align: center;
+
+}
+.container   form .btn{
+    
+   text-align: center;
+}

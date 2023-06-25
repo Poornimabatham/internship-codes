@@ -1,0 +1,242 @@
+<?php include("connection.php"); 
+error_reporting(0);
+
+// calling data in form for updation......
+$id = $_GET['id'];
+// echo $id;
+// exit;
+ 
+$queryy = "SELECT * FROM student where id= '$id'";
+$data = mysqli_query($connects,$queryy);
+$total = mysqli_num_rows($data);
+$result = mysqli_fetch_assoc($data);
+// exit;
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <!-- <link rel="stylesheet" href="../edit.css"> -->
+</head>
+<style>
+  *{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image:url(../img.avif);
+    /* background-color: aquamarine; */
+    /* background-size: 300%;
+    background-position: -400px 0px; */
+    
+}
+div.main{
+    width: 400px;
+    margin: 100px auto; 
+}
+h2{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+div.update{
+    /* background-color:rgba(0,0,0,0.5); */
+    background: transparent;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px black;
+    color:black;
+   
+}
+
+label{
+    font-family: 'Times New Roman', Times, serif;
+    font: size 18px;
+    font-style:italic;
+    margin-left: 30px;
+}
+input#name{
+    width: 70%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline:0;
+    padding:7px;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px whitesmoke;  
+    margin-left: 30px;
+}
+
+select#name{
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px whitesmoke;  
+    margin-left: 30px;
+}
+input#submit{
+    width: 100px;
+    padding: 7px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    border:none;
+    border-radius: 3px;
+    background-color: rgb(119, 119, 230);
+    color: white;
+    cursor: pointer;
+    /* border:1px solid black; */
+    box-shadow: 1px 1px 5px black ;
+    margin-left: 30px;
+    margin-bottom: 10px;   
+}
+</style>
+<body>
+    <div class="main">
+        <div class="update">
+            <h2>UPDATE DATA</h2>
+            <form id="update" action="" method='POST'enctype="multipart/form-data">
+
+                <label for="">file:-</label>
+                <br>
+                <input type="file"id="name"value=""name="file">
+                <br><br>   
+                <label for="name">Username:</label>
+                <br>
+                <input type="text"id="name"value="<?php echo $result['username'] ?>" name="name">
+                <br><br>
+                <label for="name">Email:</label>
+                <br>
+                <input type="text"id="name"value="<?php echo $result['email'] ?>" name="mail">
+                <br><br>
+                <label for="name">Age:</label>
+                <br>
+                <input type="text"id="name"value="<?php echo $result['Age'] ?>" name="Age">
+                <br><br>
+                <label for="name">Address:</label>
+                <br>
+                <input type="text"id="name"value="<?php echo $result['addres'] ?>" name="addres">
+                <br><br>
+        
+              
+                <label for="">Gender:</label>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for=""id='male'>male</label>
+                <input type="radio"id='male' class="form-control" name='check' value="male"
+                <?php if($result['gender'] == 'male')
+                { 
+                   echo"checked";
+                }
+                ?>/>
+                <label for="" id='female'>female</label>
+                <input type="radio" id='female'class="form-control" name='check' value="female"
+                <?php if($result['gender'] == 'female')
+                { 
+                   echo"checked";
+                }
+                ?>/>
+                <br><br>
+
+                <label for="position">Please select Your Post:</label>
+                <br>
+                <select id="name" name="position" id="position">                
+	             <option value="not selected">--- Choose a name ---</option>               
+	             <option value="jr.developer"
+                 <?php
+                  if($result['dropdown'] == 'jr.developer')
+                  {
+                    echo"selected";
+                  }
+                 ?>
+                 >jr.developer</option>               
+	             <option value="sn. developer"
+                 <?php
+                  if($result['dropdown'] == 'sn. developer')
+                  {
+                    echo"selected";
+                  }
+                 ?>
+                 >sn. developer</option>               
+	             <option value="programmer"
+                  <?php
+                  if($result['dropdown'] == 'programmer')
+                  {
+                    echo"selected";
+                  }
+                 ?>
+                 >programmer</option>
+               </select>
+
+               <br><br>
+                <input type="submit" id='submit' value="submit" name="save">
+                <input type="submit"  value="cancel" name="cancel" >
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<?php
+
+// updating exist data........
+if($_POST['save'])
+{
+//     print_r($_FILES);
+//     exit;
+
+
+    if(move_uploaded_file($_FILES["file"]["tmp_name"],'images/'.$_FILES["file"]["name"]))
+    {
+        echo"done";
+    }else{
+        echo"failed";
+    }
+
+    $path = $_FILES["file"]["name"];
+    // $extension = pathinfo($path, PATHINFO_EXTENSION);
+    // $extension = pathinfo($path, PATHINFO_EXTENSION);
+    $think = 'images/'.$path;
+    
+// print_r($path);
+// print_r($think);
+
+
+    
+    $username = $_POST['name'];
+    $email = $_POST['mail'];
+    $Agge = $_POST['Age'];
+    $adrss = $_POST['addres'];
+    $Gender = $_POST['check'];
+    $dropd = $_POST['position'];
+
+    //print_r($dropd);
+    //print_r($Gender);
+    //exit;
+
+$sql="UPDATE `student` SET `file`='$think',`username`='$username',`email`='$email',`Age`='$Agge',`gender`='$Gender',`addres`='$adrss',`dropdown`='$dropd' where id= '$id' ";
+//  echo $sql;
+//  exit;
+$saved= mysqli_query($connects,$sql); 
+if($saved)
+{
+    echo"<br>";
+    echo"Data updated";
+    header("location:../display.php");
+}else{
+    echo"Failed";
+}
+}
+
+?>
+   <!-- cancel updation -->
+<?php
+if($_POST['cancel'])
+{
+    header("location:../display.php");
+}
+
+?>

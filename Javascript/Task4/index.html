@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="">Date</label>
+    <input type="date" name="dat" id="dates" onchange="datepicker()" />
+    <p id="demo"></p>
+
+    <script>
+      // HOW TO CHANGE DATE
+
+      function datepicker() {
+        //     let dates = document.querySelector('#dates').value;
+        // // document.write(dates)
+
+        // let new_Date = new Date();
+        // new_Date.setFullYear(dates);
+        // document.getElementById("demo").innerHTML=new_Date;
+        let newsApiDate = document.querySelector("#dates").value;
+        let timestamp = new Date(newsApiDate).getTime();
+        let Day = new Date(timestamp).getDate();
+        // let Month = new  Date(timestamp).getMonth()+1;
+        let Month = new Date(timestamp).toLocaleString("default", {
+          month: "short",
+        });
+
+        let year = new Date(timestamp).getFullYear();
+
+        let OurNewDate = `${Day} / ${Month} / ${year}`;
+        // console.log(timestamp);
+        // console.log(Day);
+
+        // console.log(Month);
+        // console.log(year);
+
+        document.write(OurNewDate);
+      }
+
+
+      //  himashu sir 
+
+      option ={
+        day:'numeric',
+        month:"short",
+        year:"numeric"
+      }
+      let today = new Date()
+      document.write(today)
+      
+      
+    </script>
+  </body>
+</html>

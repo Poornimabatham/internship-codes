@@ -1,0 +1,30 @@
+homework
+navbar  ul horizontal position
+
+16/02/2023
+
+The most common target attribute values are:
+
+  1. _self: the page/document opens in the same window
+
+<a href="https://www.semrush.com/"target=_self">Visit Semrush!</a> 
+
+2.
+_blank = opens the document/page in a new window
+
+<a href="https://www.semrush.com/"target=_blank">Visit Semrush!</a> 
+
+
+fonder  of html = tim-berner-lee
+defination of html = hypertext markup language
+hyper-text  move from one page to another page
+
+
+
+Elements  start with new line and takes full width of web page
+heading,para,list,section etc.
+
+
+<div>
+
+href  = hypertext-reference

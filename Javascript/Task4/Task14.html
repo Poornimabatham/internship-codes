@@ -1,0 +1,123 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(248, 238, 238);
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+</body>
+
+
+<button onclick="showForm()" id="hide">click</button>
+<div class="container">
+    
+   
+
+
+
+</div>
+
+   
+   
+    <table class="table table-bordered" id="tab"  >
+       
+    </table>
+     
+   <p id="col" ></p>
+ <script >
+      
+
+      function showForm() {
+        let NewForm   = document.querySelector(".container")
+
+        let form = `<div class="row" >
+    
+        <div divclass="formdata" >
+            <form action="" method="post" id="myform" >
+            <h1 style="text-align: center;">Employees Data</h1>
+            
+<p>Name :</p>
+     <input type="text" id="name" name = "">
+            
+   
+    <p>Age :</p>
+         <input type="text" id="age">
+    <p>Salary :</p>
+         <input type="text" id="salary">
+
+    <button class="btn btn-danger" type="button" onclick="Show()">Submit</button>
+
+    
+            </form>
+        
+</div>
+</div>`
+NewForm.innerHTML = form;
+
+let Hide = document.querySelector("#hide");
+Hide.style.display="none";
+
+      }
+
+
+function Show()
+{ var a=document.getElementById("name").value;
+var b=document.getElementById("age").value;
+var c=document.getElementById("salary").value;
+
+
+ var table=`<table >
+        <tr>
+           <th>Name</th>
+           <th>Age</th>
+           <th>Salary</th>
+         
+        </tr>
+        <tr>
+            <td>${a}</td>
+            <td>${b}</td>
+            <td>${c}</td>
+            </tr>
+        
+         
+        
+    
+    </table> <br>
+
+       `;
+
+      document.getElementById("tab").innerHTML += table     
+ } 
+ function double()
+{  var x=document.getElementById("name").value;
+   var y=document.getElementById("age").value;
+   var z=document.getElementById("salary").value;
+
+ var row=`<table>
+        <tr>
+           <th>Name</th>
+           <td>${x}</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>${y}</td>
+            </tr>
+        <tr>
+           <th>Adress</th>
+           <td>${z}</td>
+        </tr>
+    </table> 
+    <button   onclick="double()">duplicate</button>`
+  document.getElementById("col").innerHTML += row
+}
+    </script>
+</body>
+</html>
+

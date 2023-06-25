@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My To Do List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css
+ "
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:ital,wght@1,100&display=swap");
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+      main {
+        width: 100%;
+        height: 100vh;
+        background-color: #00a8ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        width: 600px;
+        min-height: 300px;
+        background-color: #f5f6fa;
+        border: 1px solid seagreen;
+        border-radius: 15px;
+        box-shadow: 1px 2px 23px rebeccapurple;
+        padding: 15px;
+      }
+      #item {
+        padding: 10px;
+        width: 100%;
+        font-size: 20px;
+        border: hidden;
+        outline: hidden;
+        display: block;
+        box-shadow: 0px 0px 2px gray;
+      }
+      #todolist {
+        margin-top: 12px;
+        list-style: none;
+      }
+      #todolist li {
+        background-color: #6b7dc9;
+        color: white;
+      }
+
+      #todolist li i {
+        position: absolute;
+        right: 4px;
+      }
+      .done{
+        text-decoration: line-through;
+        color: white;
+        background-color: #67dc78 !important;
+
+      }
+      i{
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="box">
+        <input type="text" name="" id="item" autofocus />
+
+        <ul id="todolist">
+          <li>Create a note</li>
+        </ul>
+      </div>
+    </main>
+
+    <script>
+      let item = document.querySelector("#item");
+      let todoBox = document.querySelector("#todolist");
+      item.addEventListener("keyup", function (event) {
+        if (event.key == "Enter") {
+          addItems(this.value);
+          // this refer to the item
+          this.value = " ";
+          // this.value = " please   write something here "
+        }
+      });
+
+      let addItems = (item) => { 
+        var list = document.createElement("li");
+
+        list.innerHTML = ` 
+    ${item}
+                <i class="fas fa-times"</i>`;
+
+                    list.addEventListener("click",function(){
+                        this.classList.toggle("done");
+                    })
+                    list.querySelector("i").addEventListener("click",function(){
+                        list.remove()
+                    })
+                    
+        todolist.appendChild(list);
+
+      };
+    </script>
+  </body>
+</html>

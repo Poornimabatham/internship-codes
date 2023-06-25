@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="inputtext1" onchange="erase()">
+    <input type="text" id="inputtext2">
+    <button onclick="return copyPaste()">click</button>
+    <script> 
+    // let a = [
+    // ['a',20000,'fifa','ludo'],
+    // ]
+
+    // let b =[]
+    // for(let i=0;i<a.length;i++){
+    //     b[i] =a[i]
+    //     console.log(b[i]);
+    //     a[i] = " ";
+    //     console.log( "array a" +a[i])
+    // }
+
+    function copyPaste(){
+      let val=  document.getElementById("inputtext1").value;
+      document.getElementById("inputtext2").value = val;
+      
+    }
+    function erase(){}
+
+    
+</script>
+</body>
+</html>

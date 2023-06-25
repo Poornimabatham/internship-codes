@@ -1,0 +1,28 @@
+17/10/23
+
+<a href= "#item">click</a>
+------
+------
+------
+
+<p id = "item">bottom</p>
+<a href = "item2">click</a>
+
+page two
+ content
+--------   
+-----
+---------
+
+<p id = "item2">second page</p>
+
+
+id must be unique #
+
+
+
+18-02-23
+header
+navbar
+main---->aside
+footer

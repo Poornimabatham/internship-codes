@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question no 3</title>
+</head>
+<body>
+
+    <!-- Array = [3,5,1,2,55,11,1,2]
+ Result = [11,55,2,1,5,3 ]-->
+    
+
+
+ <script>
+    let arr = [3,5,1,2,55,11,1,2]
+    
+     
+    function removeDuplicates(arr) {
+        var unique = [];
+        arr.forEach(element => {
+            if (!unique.includes(element)) {
+                unique.push(element);
+            }
+        });
+        return unique;
+    }
+    // document.write(removeDuplicates(arr));
+    let d = removeDuplicates(arr)
+    // console.log(d)
+    let c = d.reverse();
+    document.write( " the reverse array is = "+ c)
+    
+
+ </script>
+</body>
+</html>

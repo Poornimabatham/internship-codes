@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Datepicker</title>
+    
+</head>
+
+<body>
+
+  <form>
+    <p>
+      <label>
+        <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_0">
+        Checkbox</label>
+      <br>
+      
+    </p>
+    <p>
+      <input type="reset" value="Reset">
+      <input type="submit" id="buttoncheck" value="Check">
+    </p>
+    <p class="checkboxStatus"></p>
+  </form>
+  
+
+
+</body>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+   <script>
+    $(function(){
+   $("#buttoncheck").click(function(){
+        if($('[type="checkbox"]').is(":checked")){alert("hey")
+
+        }else{
+          alert("bye");
+            
+         }
+         return false;
+   })
+    
+});
+   </script>
+    
+</html>

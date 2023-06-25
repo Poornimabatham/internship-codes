@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question no 1</title>
+</head>
+<body>
+
+    <!-- SOlution no 1 *WIRTE A PROGRAM FOR PRINT THE STAR PATTERN OF DIAMOND. -->
+    
+
+
+    <script>
+
+
+    // full pyramind pattern
+    let n = 5;
+    for(let i = 1; i<=n;i++){
+    
+        for(let j = 1; j<=n-i; j++){
+            document.write('&nbsp;')
+
+        }
+        for(let k = 1; k<=2*i-1; k++){
+            document.write("*")
+        }
+        for(let l = 1; l<=n-i; l++){
+            document.write('&nbsp;')
+        }
+        document.write("<br>")
+        document.write("<br>")
+
+        document.write("<br>")
+
+    }
+
+    for(let i=4; i>=1; i--){
+        for(let s=1; s<=5-i; s++){
+            document.write('&nbsp;');
+        }
+        for(let j = 1; j<=i*2-1; j++){
+            document.write("*")
+        }
+        document.write("<br>")
+    }
+
+    </script>
+    
+    <!--  -->
+</body>
+</html>

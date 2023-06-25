@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+   
+       <button onclick="ShowCommentForm()" > click</button>
+    
+
+       <form name="myform">
+        <div id="myLocation"></div>
+       </form>
+    
+       <div class="col"></div>
+    <script>
+        function ShowCommentForm(){
+            var data = `Name=<input type='text' id='name'><br>Age =<input type='text'  id='age'><br>Salary =<input type='text'  id='salary'> <button id=
+           'btn' > Submit</button> `
+  
+            document.getElementById("myLocation").innerHTML = data;
+
+
+        }
+  //       let btn  =  document.querySelector('#btn')
+  //       btn.addEventListener('click',function () {
+          
+          
+  //       })
+
+        
+  //       var x=document.getElementById("name").value;
+  //  var y=document.getElementById("age").value;
+  //  var z=document.getElementById("salary").value;
+  //  var row=`<table>
+  //       <tr>
+  //          <th>Name</th>
+  //          <td>${x}</td>
+  //       </tr>
+  //       <tr>
+  //           <th>Age</th>
+  //           <td>${y}</td>
+  //           </tr>
+  //       <tr>
+  //          <th>Adress</th>
+  //          <td>${z}</td>
+  //       </tr>
+  //   </table> 
+  //   `
+  // document.querySelector(".col").innerHTML += row
+
+      
+
+        
+
+
+
+
+    </script>
+  </body>
+</html>

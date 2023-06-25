@@ -1,0 +1,32 @@
+<?php
+include 'Connection.php';
+// Import all the variables from include.php
+extract($_POST);
+if(isset($_POST['name']) ||isset($_POST['email']) ||isset($_POST['password']) ||isset($_POST['number']) ||isset($_POST['date']) ||isset($_POST['position'])  ||isset($_POST['country']) ){
+
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+     $password = $_POST['password'];
+     $number = $_POST['number'];
+      $date = $_POST['date'];
+       $position = $_POST['position'];
+    //    $image= $_POST['image']['name'];
+       $country = $_POST['country'];
+
+       if(!empty($name) && !empty($email) && !empty($password) && !empty($number) && !empty($date) && !empty($position) &&  !empty($country)){
+
+
+        $sql ="INSERT INTO `crud` ( `Name`, `Email`, `Password`, `Mobile`, `Date`, `Gender`, `Profile`, `Image`, `Country`) VALUES ( '$name', '$email', '$password', '$number', '$date', 'male', '$position', 'image.jpg', '$country')";
+ 
+        $res = mysqli_query($conn,$sql);
+         
+    
+}
+else {
+    ho "EMPTY";
+   
+}
+ 
+}
+
+?>

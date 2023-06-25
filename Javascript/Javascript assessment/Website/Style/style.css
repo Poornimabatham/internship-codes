@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    overflow-x: none;
+}
+
+
+.container-fluid .navbar-brand{
+    width: 12%;
+    height: 13%;
+}
+.container{
+    /* background-color: red; */
+    width:100vw ;
+    height: 80vh;
+
+}
+
+.bg{
+    background-color: white;
+}
+.nav-link{
+    color: orangered;
+}
+
+
+.imgage{
+    max-width: 200%;
+    height: 300px;
+}
+
+.icon{
+    width: 10%;
+}
+
+.card:hover{
+    background-color: orange;
+}
+.btn{
+    background-color: orangered;
+    border-radius: 30px;
+    color: white;
+}

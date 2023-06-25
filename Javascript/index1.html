@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 2px solid green;
+        }
+        td{
+            border: 2px solid black;
+            border-collapse: none;
+        }
+    </style>
+</head>
+<body>
+
+    </table>
+
+    <script>
+
+        // question no 1
+        // Swap the number
+
+        // trick [a,b] = [b,a]
+    //   let a = 10;
+    //   let b= 20;
+    //   console.log(`value of a is ${a}`)
+    //   console.log(`value of b is  ${b}`)
+    //   let temp = a;
+    //  a = b;
+    //  b=temp;
+    //  console.log(`value of a is ${a}`);
+    //  console.log(`value of b is  ${b}`)
+
+
+
+    //   question no 2
+    //  Extraction of digit
+    // let  val = 807512;
+    // let sum = 0;
+    // console.log(val);
+    // while(val>0){
+    //     let lastDigit = val%10;
+    //     // sum = sum+lastDigit;
+    //     console.log("lasdigit  " + lastDigit)
+    //     val = parseInt(val/10)
+    //     console.log("value " +val)
+    // }
+
+    // console.log("the sum of value is " +sum)
+
+
+
+
+
+    // question no 3
+    // Reverse the number
+    // let val = 1267900;
+    // let rev = 0;
+    // console.log(val)
+    // while(val>0){
+    //     let lastDigit = val%10;
+    //     rev = (rev*10) + lastDigit;
+    //     val = parseInt(val/10);
+
+    // }
+    // console.log("reverse value is " + rev)
+
+
+
+    // question no 4
+    //      prime or not
+
+    // let num = 6;
+    // let counter = 0;
+    // for(let i = 1; i<=num; i++){
+    //     if(num%i==0){
+    //         counter++
+    //     }
+       
+    // }
+    // if(counter==2){
+    //         console.log("prime")
+    //     }else{
+    //         console.log("not prime")
+    //     }
+
+    
+
+
+
+
+    // question no 5
+    // for(let i =0; i<=5; i++){
+    //     for(let j =1; j<=1; j++){
+    //         document.write(i);
+    //     }
+    //     document.write("<br>");
+    // }
+    //  Print pattern
+
+ let n = 5;
+    for(let i=1; i<=n; i++){
+        for(let j=0; j<i; j++){
+            document.write("* ")
+        }
+
+        document.write("<br>")
+    }
+    // downward traingle
+    for(let i = 0; i<=n-1; i++){
+        for(let j = 0; j<n-i;j++)
+        {
+            document.write("* ")
+        }
+
+        document.write("<br>")
+        
+    }
+
+
+
+    for(let i = 1; i<=4; i++){
+        for(let j = 1; j<=4; j++){
+            document.write("*")
+        }
+        document.write("<br>")
+    }
+    
+    for(let i = 1; i<=5; i++){
+        for(let j = 1; j<=i; j++){
+            document.write("*")
+        }
+
+        document.write("<br>")
+    }
+    
+
+    // pyramid pattern
+
+    // let n = 5;
+    // for(let i = 1; i<=n;i++){
+    //     // document.write("*")
+    //     for(let j = 1; j<=n-i; j++){
+    //         document.write('&nbsp;')
+
+    //     }
+    //     for(let k = 1; k<=2*i-1; k++){
+    //         document.write("*")
+    //     }
+    //     for(let l = 1; l<=n-i; l++){
+    //         document.write('&nbsp;')
+    //     }
+    //     document.write("<br>")
+    // }
+
+
+
+document.write("<br>")
+    // Reverse pyramid 
+
+    for(let i=5; i>=1; i--){
+        for(let s=1; s<=5-i; s++){
+            document.write('&nbsp;');
+        }
+        for(let j = 1; j<=i*2-1; j++){
+            document.write("*")
+        }
+        document.write("<br>")
+    }
+    
+
+
+
+
+
+    // full pyramind pattern
+    // let n = 5;
+    // for(let i = 1; i<=n;i++){
+    
+    //     for(let j = 1; j<=n-i; j++){
+    //         document.write('&nbsp;')
+
+    //     }
+    //     for(let k = 1; k<=2*i-1; k++){
+    //         document.write("*")
+    //     }
+    //     for(let l = 1; l<=n-i; l++){
+    //         document.write('&nbsp;')
+    //     }
+    //     document.write("<br>")
+    // }
+
+    // for(let i=5; i>=1; i--){
+    //     for(let s=1; s<=5-i; s++){
+    //         document.write('&nbsp;');
+    //     }
+    //     for(let j = 1; j<=i*2-1; j++){
+    //         document.write("*")
+    //     }
+    //     document.write("<br>")
+    // }
+    
+
+
+
+    
+    </script>
+    
+</body>
+</html>

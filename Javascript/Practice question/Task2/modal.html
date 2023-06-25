@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="addition();">
+    <div class="container">
+      <div class="center">
+        <button class="btn btn-primary" id="button">Make Head</button>
+      </div>
+    </div>
+
+    <!-- <form id="signup"> -->
+    <div class="container-fluid popup">
+      <div class="popup-content">
+        <img
+          src="data:image/png;base64,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"
+          alt=""
+          class="close"
+        />
+        <div class="mb-3">
+          <label for="">ID</label>
+          <input
+            type="number"
+            class="form-control"
+            id="identity"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="Name"></label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="">Salary</label>
+          <input
+            type="number"
+            class="form-control"
+            id="salary"
+            aria-describedby="emailHelp"
+          />
+        </div>
+
+        <div class="text-center">
+          <button
+            type="submit"
+            class="btn btn-success my-3"
+            id="entry"
+            onclick="Insert()"
+          >
+            submit
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- </form> -->
+
+    <!-- <div class="container" > -->
+    <table id="display">
+      <thead>
+        
+        <tr>
+          <th>Employee id  <input type="number"  name="one" id="one"  value ='0' onchange="addition();"></th>
+        </tr>
+        <tr>
+          <th>Employee name       <input type="number" name="two" id="two" value ='0'  onchange="addition();">
+          </th>
+        </tr>
+        <tr>
+          <th>Employee salary <input type="number" name="three" id="three" value ='0' onchange="addition();"></th>
+        </tr>
+
+        
+        <tr>
+          <th><input type="text" name="total" id="total"></th>
+        </tr>
+      </thead>
+
+      <tbody id="tbl"></tbody>
+    </table>
+    <!-- </div> -->
+
+
+
+
+    <script src="script.js">
+
+     
+    </script>
+  </body>
+</html>

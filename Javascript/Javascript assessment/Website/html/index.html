@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <title>Hello, world!</title>
+  <link rel="stylesheet" href="../Style/style.css">
+<style>
+  .bg{
+    background-color: rgb(227, 111, 69);
+    color: white ;
+  }
+  
+  html{
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .nav-item span{
+    color: orangered;
+  }
+   nav-webkit-scrollbar{
+    box-shadow:  12px 23px 12px white;
+  }
+  h1{
+    font-size: 4.4em;
+    font-weight: 300px;
+  }
+  /* .tt{
+    margin-bottom: 40%;
+  }
+  .tr{
+    border: 2px solid green;
+  } */
+  .i{
+     max-height: 300px;
+  }
+</style>
+</head>
+
+<body>
+
+  <!-- Navbar starts -->  
+
+  <nav class="navbar navbar-expand-lg  navbar-light  " style="position: sticky; top:0px; ">
+    <div class="container-fluid">
+      <img class="navbar-brand" src="../Image/logo.webp"></img>
+
+      <form class="d-flex">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> <span>About</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+
+
+          </ul>
+          <button class="btn mx-5 px-4" type="submit" onclick="log()">Logout</button>
+      </form>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Navbar end -->
+
+
+
+  <!-- Header starts -->
+  <div class="container">
+    <div class="row   d-flex">
+      <div class=" col-12 col-md-6 col-lg-9  my-4 ">
+        <h4>hello,I'm</h4>
+        <h1>Full Stack Developer</h1>
+        <p class="py-1">UI/UX Designer</p>
+        <button class="btn">Sign Up</button>
+ 
+
+      </div>
+      <div class=" col-12  col-md-6 col-lg-3  img-fluid  m-auto ">
+        <img src="../Image/pic2.jpg" class="imgage" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="container ">
+    <div class="row d-flex">
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <img src="../Image/pic2.jpg" class="imgage" alt="">
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-7">
+        <h2>Developer</h2>
+        <p>UI/UX Designer</p>
+        <p >
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut vel fuga numquam quos deserunt nisi quaerat
+          optio fugiat, iste corrupti iusto eum architecto sit, porro dolore veniam consectetur atque quia?
+          tur officiis animi labo
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut vel fuga numquam quos deserunt nisi quaerat
+          optio fugiat, iste corrupti iusto eum architecto sit, porro dolore veniam consectetur atque quia?
+          tur officiis animi laboriosam deleniti illo sapiente molestias soluta, esse repudiandae, reiciendis odit tempora? Dicta, accusantium rem voluptas voluptate enim vitae, quod dolorum optio illum corporis nostrum, totam amet?</p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut vel fuga numquam quos deserunt nisi quaerat
+          optio fugiat, iste corrupti iusto eum architecto sit, porro dolore veniam consectetur atque quia?
+          tur officiis animi labo
+          <button class="btn">download Cv</button>
+      </div>
+
+    </div>
+  </div>
+
+  <section>
+  <div class="container  ">
+    <div class="row  ">
+      <div class="col-sm-8 m-auto">
+        <p class="text-center">Service</p>
+        <h3 class="text-center">What I Do</h3>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatum, fuga minima ex veniam corporis?
+          die pariatur natus rem quia et.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-2 col-lg-3 ">
+        <div class="card" style="width: 10rem; height: 200px;">
+          <div class="card-body">
+            <i class="fa-solid fa-crown icon"></i>
+            <h3 class="card-title">UI/UX Design</h3>
+            >
+          </div>
+        </div>
+      </div>
+      <div class=" col-sm-6 col-md-2  col-lg-3 ">
+        <div class="card" style="width: 10rem; height: 200px;">
+          <div class="card-body">
+            <i class="fa-solid fa-crown"></i>
+            <h3 class="card-title">UI/UX Design</h3>
+            >
+          </div>
+        </div>
+      </div>
+      <div class=" col-sm-6 col-md-2 col-lg-3 ">
+        <div class="card" style="width: 10rem; height: 200px;">
+          <div class="card-body">
+            <i class="fa-solid fa-crown"></i>
+            
+          
+            <h3 class="card-title">UI/UX Design</h3>
+            >
+          </div>
+        </div>
+      </div>
+      <div class=" col-sm-6 col-md-2 col-lg-3 me-auto">
+        <div class="card" style="width: 10rem; height: 200px;">
+          <div class="card-body">
+            <i class="fa-solid fa-crown"></i>
+            <h3 class="card-title">UI/UX Design</h3>
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <div class="container">
+    <div class="row text-center">
+      <p>Skills</p>
+      <h3>Why Choose Me</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatum, fuga minima ex veniam corporis?
+        Doloribus modi atque ab amet consequuntur unde quos ducimus inventore, minima nihil aliquid voluptas suscipit!
+        Repellendus necessitatibus laboriosam sequi, ut ea minus voluptas officia sed commodi excepturi. Laborum sequi
+        expedita velit, quisquam cupiditate quae molestiae ullam qui! Illum numquam libero eos recusandae magni nesciunt
+        ipsa.
+        Nulla, cupiditate omnis? Eveniet quaerat, error ea adipisci fugiat rerum alias voluptates deserunt! Voluptatum,
+        m cupiditate velit aspernatur fugiat, ipsum hic ipsa laborum ducimus omnis vero sint
+        dolore!</p>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row d-flex">
+      <div class=" col-sm-12 col-md-4 col-lg-6">
+        <p>Photoshop</p>
+        <p>App Design</p>
+
+      </div>
+      <div class=" col-sm-12 col-md-4 col-lg-6">
+        <p>Web design</p>
+
+        <p>SEo</p>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row text-center">
+      <p>Service</p>
+      <h3>What I Do</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatum, fuga minima ex veniam corporis?
+        Doloribus modi atque ab amet consequuntur unde quos ducimus inventore, minima nihil aliquid voluptas suscipit!
+        Repellendus necessitatibus laboriosam sequi, ut ea minus voluptas officia sed commodi excepturi. Laborum sequi
+        expedita velit, quisquam cupiditate quae molestiae ullam qui! Illum numquam libero eos recusandae magni nesciunt
+        ipsa.
+        Nulla, cupiditate omnis? Eveniet quaerat, error ea adipisci fugiat rerum alias voluptates deserunt! Voluptatum,
+        minus sapiente ullam, odit culpa explicabo exercitationem ratione porro eius similique consectetur, amet nostrum
+        iure earum?
+        Pariatur blanditiis placeat error mollitia consequatur tenetur officiis unde minima neque quae maxime suscipit
+        ipsa nam dicta quidem vero, magni excepturi dignissimos quas. Voluptatibus consectetur unde voluptates
+        accusamus! Esse, incidunt?
+        Quam doloribus perferendis magnam, vitae pariatur fugiat similique magni minima sit inventore temporibus
+        expedita? Quas nobis illum cupiditate velit aspernatur fugiat, ipsum hic ipsa laborum ducimus omnis vero sint
+        dolore!</p>
+
+    </div>
+
+  </div>
+
+
+  <div class="container">
+    <div class="row  d-flex">
+
+    <div class="col-lg-4">
+      <div class="card" style="height: 20rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+
+      </div>
+      <div class="col-lg-4">
+        <div class="card" style="height: 20rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+  
+        </div>
+        <div class="col-lg-4">
+          <div class="card" style="height: 20rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+    
+          </div>
+     
+
+  </div>
+  </div>
+
+  <div class="container-fluid bg">
+    <div class="row  d-flex px-4 me-auto">
+      <div class="col-lg-8  py-4">
+        <p>Hire me for the project</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum in voluptatem accusantium dolorum voluptatibus
+          aliquam porro veniam velit, eius, deleniti fugiat molestiae, expedita fuga sed exercitationem? Modi quibusdam
+          placeat saepe!uas pariatur architecto facere! Distinctio, iusto rrum voluptas magnam ex ut!</p>
+      </div>
+      <div class="col-lg-4 px-5  py-5 ">
+        <button>Hire Me</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="row text-center">
+      <p>Contact</p>
+      <h3>Get In Touch With Me</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatum, fuga minima ex veniam corporis?
+        Doloribus modi atque ab amet consequuntur unde quos ducimus inventore, minima nihil aliquid voluptas suscipit!
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row d-flex">
+      <div class="col-lg-6">
+       
+         <form class="shadow ">
+          <h3>Available 24/7</h3>
+          <h1>Get In Touch</h1>
+        <div class="mx-5 my-5 ">
+          <input type="text" class="form-control" id="user" aria-describedby="emailHelp" placeholder="Enter Email" >
+        </div>
+        <div class="mx-5 my-5">
+            <input type="pass" class="form-control" id="pass" aria-describedby="emailHelp" placeholder="password "  >
+          </div>
+          <div class="mx-5 my-5">
+            <input type="pass" class="form-control" id="confirm" aria-describedby="emailHelp" placeholder="Message" >
+          </div>
+        
+          <div class="button1">
+            <button type="submit" class="btn">Send Message
+            </button>
+            
+            
+            
+          </div>
+        
+          
+        </button>
+        
+        
+      </form>
+      </div>
+      <div class="col-lg-6 px-5">
+        <div class="row">
+          <i class="fa fa-map-marker" aria-hidden="true"></i><p>Location</p>
+          <p>1234 FAKE ST NOwhere AB colony</p>
+        </div>
+        <div class="row">
+          <i class="fa-solid fa-phone"></i><p>Phone Nubmber</p>
+          <p>1234 FAKE ST NOwhere AB colony</p>
+        </div>
+        <div class="row">
+          <i class="fa fa-envelope" aria-hidden="true"></i><p>Email Address</p>
+          <p>1234 FAKE ST NOwhere AB colony</p>
+        </div>
+         </div>
+    </div>
+  </div>
+
+
+  <!-- footer starts -->
+
+
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+    <div class="row">
+      <div class="col-6 px-3 ">
+        Copyright: © UBI
+      </div>
+      <div class="col-4 d-flex">
+        <div class="row"><i class="fa-brands fa-facebook-f"></i></div>
+        <div class="row"><i class="fa-brands fa-facebook-f"></i></div>
+        <div class="row"><i class="fa-brands fa-facebook-f"></i></div>
+        <div class="row"><i class="fa-brands fa-facebook-f"></i></div>
+      </div>
+    </div> 
+    
+  </div>
+ 
+
+</footer>
+<!-- Footer -->
+  <!-- footer ends -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <script>
+    function log() {
+      window.open("http://127.0.0.1:5500/html/Login.html", "_blank")
+    }
+  </script>
+</body>
+
+</html>

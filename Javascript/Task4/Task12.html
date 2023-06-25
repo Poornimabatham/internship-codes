@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #img{
+        height: 300px;
+        width: 400px;
+        border: 2px solid black;
+        background-position: center;
+        background-size: cover;
+       }
+       body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       }
+       
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div>Click the upload icon below to upload a file.</div>
+
+        <label for="file-input">
+          <i class="fa fa-edit"></i>
+        </label>
+        <input id="file-input" type="file" accept="image/png, image/jpg  " hidden/>
+        
+        <div id="img"></div>
+
+        <script>
+            var img=document.querySelector('#file-input');
+            var uploaded_image=""
+        
+            img.addEventListener("change",function(){
+                var reader= new FileReader();
+                reader.addEventListener("load",()=>{
+                    uploaded_image = reader.result;
+                    document.querySelector('#img').style.backgroundImage= `url(${uploaded_image})`
+                });
+                reader.readAsDataURL(this.files[0]);
+        
+            })
+        </script>
+        
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .show{
+            border: 2px soli green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+        <table>
+            <thead>
+                <tr><th>Name</th>
+                    <th>Number</th>
+                    <th>Address</th>
+                    
+                    </tr>
+            </thead>
+                
+                    <tbody id="s"></tbody>
+
+                </table>
+
+
+    <button>click </button>
+    <script>
+        // let container = document.querySelector(".container")
+        var btn = document.querySelector("button")
+        var s = document.querySelector("#s")
+        // console.log(btn)
+        btn.addEventListener('click',function(){
+            let d = `<tr>
+                <td>poornima batham</td>
+                <td>9893328079</td>
+                    <td>Pinto Park<td>
+
+                </tr>
+               `
+
+                // s.appendChild += d
+                document.getElementById("s").innerHTML +=d;
+        })
+    </script>
+</body>
+</html>

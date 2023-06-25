@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+     <div id="a">first</div>  
+     <p class="para">ubitech</p>
+    <div class="para">global</div>
+    <h5 class="para">nadi gate</h5>
+  <!-- <!-- Month1: <input type="text" id="first" onkeyup="cal()">
+  Month2: <input type="text" id="second" onkeyup="cal()">
+  Month3:  <input type="text" id="third" onkeyup="cal()">
+<p id="show"></p> -->
+    <script>
+     let a =  document.getElementById('a') 
+     let b =  document.getElementsByClassName('para') 
+     let c =  document.querySelectorAll('.para') 
+     console.log(c);
+     console.log(a.textContent);
+     console.log(a.innerHTML);
+    a.innerHTML='second'
+    a.style.backgroundColor='red'
+    a.style.color='white'
+    console.log(b)
+    console.log(b[0])
+     for(let i=0;i< b.length;i++)
+     {
+        console.log(b[i])
+     }
+    let first = document.getElementById('a');
+    
+    let para = document.createElement('p')
+    first.appendChild(para)
+    para.innerHTML='second'
+    document.body.appendChild(para)
+    document.body.removeChild(first)
+    para.style.color='green'
+  function cal()
+  {
+    let Month1 = document.getElementById('first').value
+    let Month2 = document.getElementById('second').value
+    let Month3 = document.getElementById('third').value
+    let show = document.getElementById('show')
+
+    show.innerHTML=+Month1 + +Month2 + +Month3;
+
+  }
+    
+    </script>
+</body>
+</html>

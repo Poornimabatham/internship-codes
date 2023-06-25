@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+
+
+
+let Base_salary = prompt("Enter your salary");
+let HRA = 0;
+let DA = 0;
+
+
+
+if(Base_salary<=1000){
+
+     HRA = (Base_salary*10)/100;
+     DA = (Base_salary*20)/100;
+    console.log(`your  HRA is  ${HRA} and salary is  ${Base_salary}` )
+    
+
+}
+ else if(Base_salary<=20000)
+ {
+     DA = (Base_salary*20)/100;
+     DA = (Base_salary*40)/100;
+     console.log(`your DA salary is  ${DA}` )
+
+
+ }
+  
+  else if(Base_salary>2000)
+  {
+    HRA =(Base_salary*30)/100;
+    DA = (Base_salary*60)/100
+    console.log( `your HRA is  ${HRA} and DA is ${DA}` )
+
+  }
+else{
+    console.log(`Base salary is invalid`);
+}
+
+let Gross_salary = +Base_salary + +HRA+  +DA
+console.log ( `your gross salary is ${Gross_salary}`);
+  
+
+        
+    </script>
+</body>
+</html>

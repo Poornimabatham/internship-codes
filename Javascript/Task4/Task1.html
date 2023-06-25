@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <input type="text" value="A"><input type="text" value="B"><input type="text" value="C"><input type="text" value="c">
+         <button type="button" onclick="add()"> +</button>
+    </div>
+    <div class="my">
+
+        
+        <button onclick="addi()">+</button> <button onclick="delet()">-</button>
+
+    </div>
+    
+
+    <script>
+
+function add(){
+    let  myContent = document.querySelector('.my');
+
+let table =  `
+        <input type="text" value=""><input type="text" value=""><input type="text" value=""><input type="text" value="">
+         <button type="button" onclick="add()"> +</button>
+
+    </div>`
+
+    
+myContent.innerHTML = table
+}
+
+function addi(){
+    let  myContent = document.querySelector('.my');
+
+let table =  `
+        <input type="text" value=""><input type="text" value=""><input type="text" value=""><input type="text" value="">
+         <button type="button" onclick="add()"> +</button>
+
+    </div>`
+
+myContent.innerHTML = table
+}
+
+
+function delet(){
+    let  myContent = document.querySelector('.my');
+
+let table =  ``
+       
+myContent.innerHTML = table
+}
+
+
+    </script>
+</body>
+</html>

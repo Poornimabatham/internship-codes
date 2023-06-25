@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <label for="">Date : From</label>
+    <input type="date" name="" id="date1"  min="2023-01-03" />
+    <label for="">Date : To</label>
+    <input type="date" name="" id="date2"  />
+
+    <div class="id-count"></div>
+    <div class="earning"></div>
+
+    <button type="button"  onclick="show()">display the difference</button>
+     <script>
+        function show(){
+            let start= document.querySelector("#date1").value;
+            let end = document.querySelector("#date2").value;
+
+            let startTimestamp = new Date(start).getTime();
+            let endTimestamp = new Date(end).getTime()
+                let  difference =   endTimestamp-startTimestamp;
+                console.log(difference)
+                 let differnceINDays = Math.round(difference/(1000*60*60*24));
+                  let daycount = document.querySelector(".id-count");
+                  daycount.innerHTML= `The  total number of  ${differnceINDays } days`
+                  let perday_wages = 250*differnceINDays;
+
+                  let earning = document.querySelector(".earning");
+                   earning.innerHTML = `the total earning is ${perday_wages}`
+        }
+
+     </script>
+
+
+</body>
+
+</html>

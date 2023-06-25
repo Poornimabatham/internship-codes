@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Yara Da Dhaba</h1>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="part1">
+          <fieldset>
+            <legend>Personal Information</legend>
+            Full Name: <input type="text" id="name" pnc /> <br />
+
+            Your Email: <input type="text" id="email" /><br />
+            Your Mobile: <input type="text" id="mobile" /><br />
+            <button>click</button>
+          </fieldset>
+        </div>
+
+        <div class="part2">
+          <fieldset>
+            <legend>Your Orders</legend>
+            Smosa (Rs. 10): <input type="text" id="smosa" /> <br />
+            Kachori (Rs. 12): <input type="text" id="kachori" /><br />
+            Vadapav (Rs. 60): <input type="text" id="vadapav" /><br />
+            Maggi (Rs. 50): <input type="text" id="maggi" /><br />
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="container">
+        <fieldset>
+          <legend>Your Bill</legend>
+          <h3>Your Name:<span id="name1"></span></h3>
+          <h3>Email: <span id="email1"></span></h3>
+          <h3>Mobile: <span id="mobile1"></span></h3>
+          
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Menu</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Amout</th>
+              </tr>
+            </thead>
+            <tbody id="bill">
+              <tr>
+                <td>Smosa</td>
+                <td>Rs. 10</td>
+                <td>1</td>
+                <td>10x1 = 10</td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+        <h2>Total Amout: Rs. <span id="amount">0</span></h2>
+      </div>
+    </div>
+
+    <script>
+        var Samosa = 100;
+      var kachori = 30;
+      var vada = 60;
+      var maggi = 50
+      //   var name = "";
+
+      document.querySelector("#name").addEventListener("keyup", function () {
+        // name = document.querySelector("#name").value;
+        // name = this.value;
+        // console.log(name)
+        document.getElementById("name1").innerHTML = this.value;
+      });
+      //   var email = "";
+
+      document.querySelector("#email").addEventListener("keyup", function () {
+        // email = document.querySelector("#email").value;
+        // email = this.value;
+        // console.log(email)
+        document.getElementById("email1").innerHTML = this.value;
+      });
+      //   var mobile = "";
+
+      document.querySelector("#mobile").addEventListener("keyup", function () {
+        // mobile = document.querySelector("#mobile").value;
+        // mobile = this.value;
+        // console.log(mobile)
+        document.getElementById("mobile1").innerHTML = this.value;
+      });
+
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+var = glocal
+let block
+const block
+variable cant be start from number,space use _ instead of space
+var can be reinitialised
+const cannot be  reinitialised
+null is a placeholder
+undefined is value

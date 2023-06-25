@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 1px solid black;
+        }
+
+       
+    </style>
+</head>
+<body>
+
+
+
+    <div class="container  ">
+
+
+        <button
+            type="submit"
+            class="btn btn-success my-3"
+            id="entry"
+            onclick="Insert()"
+          >
+            Yesterday
+          </button>
+        
+          <button
+            type="submit"
+            class="btn btn-success my-3"
+            id="entry"
+            onclick="Insert1()"
+          >
+            Tommorow
+          </button>
+          
+            
+   
+      </div>
+      
+      <div class="container-fluid">
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Time In</th>
+                <th scope="col">Time Out</th>
+
+              </tr>
+              <tr>
+                <td id="id"></td>
+                <td  id="name"></td>
+                <td  id="timein"></td>
+                <td id="timeout" > </td>
+              </tr>
+              
+            </thead>
+            <tbody class="tbl">
+                
+                <input type="text" name="" id="id" value ="I">
+                <input type="text" name="" id="name" value="C" >
+                <input type="text" name="" id="timein" value="12:00">
+                <input type="text" name="" id="timeout" value="1:00">
+            </tbody>
+          </table>
+      </div>
+
+
+      <script>
+
+
+Yes =[
+
+1,'A','11:00','12:00'
+      ]
+
+ Tomm =[
+
+3,'B','9:00','12:00'  
+      ]
+ function Insert()
+ {
+   
+
+    for(let i=0;i<Yes.length;i++){
+
+        document.write(Yes[i])
+
+    }
+    
+      
+ }
+
+ function Insert1()
+ {
+   
+
+    for(let i=0;i<Tomm.length;i++){
+
+        document.write(Tomm[i])
+
+    }
+      
+ }
+
+
+
+
+ 
+
+
+
+      
+      </script>
+    
+        
+    
+</body>
+</html>
+
+
+<!-- input type="number"  name="one" id="one"  value ='0' onchange="addition();"></th>
+        </tr>
+        <tr>
+          <th>Employee name       <input type="number" name="two" id="two" value ='0'  onchange="addition();">
+          </th>
+        </tr>
+        <tr>
+          <th>Employee salary <input type="number" name="three" id="three" value ='0' onchange="addition();"></th> -->
